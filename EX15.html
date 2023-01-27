@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Room for 3 items</title>
+    </head>
+    <body>
+        <script>
+            items=new Array(3);
+            items[0]="pen";
+            items[1]="Baby powder";
+            items[2]="ink";
+    for(let i=0;i<items.length;i++)
+            {
+            document.write(items[i]+"<br>");
+            }   
+    document.write("<br>");
+    for(let i=items.length-1;i>=0;i--)
+{
+    document.write(items[i]+"<br>");
+}
+        document.write("<br>");
+        document.write(items.sort().join("<br>"));    
+        </script>
+    </body>
+</html>

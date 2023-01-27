@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Update a page every 2 seconds</title>
+    </head>
+
+<body>
+    <script>
+        var counter=0;
+        var ID=window.setTimeout("Update();",2000);
+        function Update()
+        {
+            counter++;
+            window.status="The counter is now at"+counter;
+            document.form1.input1.value="The counter is now at"+counter;
+            Id=window.setTimeout("Update();",2000);
+
+        }
+    </script>
+        <form name="form1">
+            <input type="text" name="input1" size="40"><BR>
+                <input type="button" value="reset" onClick="counter=0;"><br>
+                <input type="button" value="STOP" onclick="window.clearTimeout(ID);">
+            </form>
+   
+</body>
+
+</html>
